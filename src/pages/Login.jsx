@@ -3,6 +3,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Wallet, Eye, EyeOff, ArrowRight } from "lucide-react";
 import { useAuth } from "../context/AuthContext";
 import { getApiErrorMessage } from "../services/api";
+import "../styles/auth.css";
 
 export default function Login() {
   const { login } = useAuth();

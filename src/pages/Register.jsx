@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { UserRoundPlus, Eye, EyeOff, ArrowRight } from "lucide-react";
 import { useAuth } from "../context/AuthContext";
 import { getApiErrorMessage } from "../services/api";
+import "../styles/auth.css";
 
 export default function Register() {
   const { register } = useAuth();
