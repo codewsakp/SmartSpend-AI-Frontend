@@ -1,14 +1,15 @@
 
 import axios from "axios";
 
+console.log("API BASE URL:", import.meta.env.VITE_API_BASE_URL);
+
 const api = axios.create({
-  baseURL: "",
+  baseURL: import.meta.env.VITE_API_BASE_URL,
   headers: {
     "Content-Type": "application/json",
   },
   timeout: 15000,
 });
-
 // Attach the current user's JWT to protected API requests.
 api.interceptors.request.use(
   (config) => {
