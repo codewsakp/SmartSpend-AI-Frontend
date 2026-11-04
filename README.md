@@ -1,16 +1,83 @@
-# React + Vite
+# 💸 SmartSpend AI – Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive expense-tracking application built with **React.js** that helps users manage expenses, track budgets, and visualize their spending habits.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- 🔐 User registration and login
+- 📊 Dashboard with expense summaries
+- 💰 Add, view, update, and delete transactions
+- 🎯 Budget management and tracking
+- 📈 Analytics with interactive charts
+- 🤖 AI-powered expense quick add
+- 👤 User profile management
+- 📱 Responsive UI for different screen sizes
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React.js & JavaScript
+- Vite
+- React Router
+- Axios
+- Recharts
+- Lucide React
+- CSS
 
-## Expanding the ESLint configuration
+## 📁 Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```text
+src/
+├── components/   # Reusable UI components
+├── context/      # Authentication context
+├── pages/        # Application pages
+└── services/     # API integration
+```
+
+## 🚀 Run Locally
+
+**1. Clone the repository**
+
+```bash
+git clone https://github.com/codewsakp/SmartSpend-AI-Frontend.git
+cd SmartSpend-AI-Frontend
+```
+
+**2. Install dependencies**
+
+```bash
+npm install
+```
+
+**3. Configure environment variables**
+
+Create a `.env` file in the project root:
+
+```env
+VITE_API_BASE_URL=http://localhost:8080
+```
+
+**4. Start the development server**
+
+```bash
+npm run dev
+```
+
+Open the local URL displayed in your terminal.
+
+> Make sure the Spring Boot backend is running before using the application.
+
+## 🌐 Live Application
+
+[SmartSpend AI – Open Application](https://smartspend-ai-frontend-production.up.railway.app)
+
+## 🔗 Related Repository
+
+**Backend:** [SmartSpend AI – Spring Boot](https://github.com/codewsakp/SmartSpend_AI_ExpenseTracker)
+
+## 🎥 Demo
+
+Screenshots and a project walkthrough video will be added soon.
+
+---
+
+**Developed as a full-stack project using React.js and Spring Boot.**
