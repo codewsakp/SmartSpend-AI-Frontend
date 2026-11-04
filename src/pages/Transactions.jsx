@@ -1,4 +1,5 @@
-
+import AiQuickAdd from "../components/ai/AiQuickAdd";
+import "../components/ai/AiQuickAdd.css";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import {
   Plus,
@@ -258,7 +259,7 @@ export default function Transactions() {
           Add Expense
         </button>
       </div>
-
+      <AiQuickAdd onExpenseAdded={loadExpenses} />
       <div className="transactions-summary">
         <div className="transactions-summary-card">
           <div className="transactions-summary-icon purple">
